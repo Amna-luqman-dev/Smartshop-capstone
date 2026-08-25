@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> CART </title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+   <section class="bg-red-200 min-h-screen p-10">
+  <div class="flex justify-center">
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+      <!-- Card 1 -->
+      <div class="bg-blue-100 p-4 rounded-lg shadow">
+        <img
+          src="images/delivary.jpeg"
+          alt="delivery-boy"
+          class="h-40 p-2 mx-auto rounded-2xl"
+        />
+
+        <h1 class="font-bold pt-2">Home Delivery</h1>
+        <p>Fast & Reliable Home Delivery</p>
+        <p class="p-2 font-bold">Price 50$</p>
+
+        <div class="flex items-center justify-center gap-4 mt-4">
+          <button
+            onclick="decreaseQuantity(1)"
+            class="bg-red-500 text-white px-4 py-2 rounded"
+          >
+            −
+          </button>
+
+          <span id="quantity-1" class="text-xl font-bold">0</span>
+
+          <button
+            onclick="increaseQuantity(1)"
+            class="bg-green-500 text-white px-4 py-2 rounded"
+          >
+            +
+          </button>
+        </div>
+      </div>
+
+
+      <!-- Card 2 -->
+      <div class="bg-blue-100 p-4 rounded-lg shadow">
+        <img
+          src="images/blue.jpeg"
+          alt="delivery-boy"
+          class="h-40 p-2 mx-auto rounded-2xl"
+        />
+
+        <h1 class="font-bold pt-2">Fast Delivery</h1>
+        <p>Quick & Safe Delivery</p>
+        <p class="p-2 font-bold">Price 40$</p>
+
+        <div class="flex items-center justify-center gap-4 mt-4">
+          <button
+            onclick="decreaseQuantity(2)"
+            class="bg-red-500 text-white px-4 py-2 rounded"
+          >
+            −
+          </button>
+
+          <span id="quantity-2" class="text-xl font-bold">0</span>
+
+          <button
+            onclick="increaseQuantity(2)"
+            class="bg-green-500 text-white px-4 py-2 rounded"
+          >
+            +
+          </button>
+        </div>
+      </div>
+
+
+      <!-- Card 3 -->
+      <div class="bg-blue-100 p-4 rounded-lg shadow">
+        <img
+          src="images/shoping-mart.jpeg"
+          alt="delivery-boy"
+          class="h-30 p-2 mx-auto rounded-2xl"
+        />
+
+        <h1 class="font-bold pt-2">Online Shopping</h1>
+        <p>Easy & Secure Shopping</p>
+        <p class="p-2 font-bold">Price 70$</p>
+
+        <div class="flex items-center justify-center gap-4 mt-4">
+          <button
+            onclick="decreaseQuantity(3)"
+            class="bg-red-500 text-white px-4 py-2 rounded"
+          >
+            −
+          </button>
+
+          <span id="quantity-3" class="text-xl font-bold">0</span>
+
+          <button
+            onclick="increaseQuantity(3)"
+            class="bg-green-500 text-white px-4 py-2 rounded"
+          >
+            +
+          </button>
+        </div>
+      </div>
+
+
+      <!-- Card 4 -->
+      <div class="bg-blue-100 p-4 rounded-lg shadow">
+        <img
+          src="images/shirts.jpeg"
+          alt="delivery-boy"
+          class="h-40 p-2 mx-auto rounded-2xl"
+        />
+
+        <h1 class="font-bold pt-2">Easy Payment</h1>
+        <p>Simple & Secure Payment</p>
+        <p class="p-2 font-bold">Price 70$</p>
+
+        <div class="flex items-center justify-center gap-4 mt-4">
+          <button
+            onclick="decreaseQuantity(4)"
+            class="bg-red-500 text-white px-4 py-2 rounded"
+          >
+            −
+          </button>
+
+          <span id="quantity-4" class="text-xl font-bold">0</span>
+
+          <button
+            onclick="increaseQuantity(4)"
+            class="bg-green-500 text-white px-4 py-2 rounded"
+          >
+            +
+          </button>
+        </div>
+      </div>
+
+      <!-- 5--cart -->
+
+      <div class="bg-blue-100 p-4 rounded-lg shadow">
+        <img
+          src="images/perfoums.jpeg"
+          alt="delivery-boy"
+          class="h-40 p-2 mx-auto rounded-2xl"
+        />
+
+        <h1 class="font-bold pt-2">Easy Payment</h1>
+        <p>Simple & Secure Payment</p>
+        <p class="p-2 font-bold">Price 30$</p>
+
+        <div class="flex items-center justify-center gap-4 mt-4">
+          <button
+            onclick="decreaseQuantity(4)"
+            class="bg-red-500 text-white px-4 py-2 rounded"
+          >
+            −
+          </button>
+
+          <span id="quantity-4" class="text-xl font-bold">0</span>
+
+          <button
+            onclick="increaseQuantity(4)"
+            class="bg-green-500 text-white px-4 py-2 rounded"
+          >
+            +
+          </button>
+        </div>
+      </div>
+
+      <!-- 6th cart -->
+
+      <div class="bg-blue-100 p-4 rounded-lg shadow">
+        <img
+          src="images/makeup.jpeg"
+          alt="delivery-boy"
+          class="h-40 p-2 mx-auto rounded-2xl"
+        />
+
+        <h1 class="font-bold pt-2">Easy Payment</h1>
+        <p>Simple & Secure Payment</p>
+        <p class="p-2 font-bold">Price 80$</p>
+
+        <div class="flex items-center justify-center gap-4 mt-4">
+          <button
+            onclick="decreaseQuantity(4)"
+            class="bg-red-500 text-white px-4 py-2 rounded"
+          >
+            −
+          </button>
+
+          <span id="quantity-4" class="text-xl font-bold">0</span>
+
+          <button
+            onclick="increaseQuantity(4)"
+            class="bg-green-500 text-white px-4 py-2 rounded"
+          >
+            +
+          </button>
+        </div>
+      </div>
+
+      <!-- 7th cart -->
+
+      <div class="bg-blue-100 p-4 rounded-lg shadow">
+        <img
+          src="images/perfoums.jpeg"
+          alt="delivery-boy"
+          class="h-40 p-2 mx-auto rounded-2xl"
+        />
+
+        <h1 class="font-bold pt-2">Easy Payment</h1>
+        <p>Simple & Secure Payment</p>
+        <p class="p-2 font-bold">Price 30$</p>
+
+        <div class="flex items-center justify-center gap-4 mt-4">
+          <button
+            onclick="decreaseQuantity(4)"
+            class="bg-red-500 text-white px-4 py-2 rounded"
+          >
+            −
+          </button>
+
+          <span id="quantity-4" class="text-xl font-bold">0</span>
+
+          <button
+            onclick="increaseQuantity(4)"
+            class="bg-green-500 text-white px-4 py-2 rounded"
+          >
+            +
+          </button>
+        </div>
+      </div>
+
+      <!-- 8th cart -->
+
+      <div class="bg-blue-100 p-4 rounded-lg shadow">
+        <img
+          src="images/bages.jpeg"
+          alt="delivery-boy"
+          class="h-40 p-2 mx-auto rounded-2xl"
+        />
+
+        <h1 class="font-bold pt-2">Easy Payment</h1>
+        <p>Simple & Secure Payment</p>
+        <p class="p-2 font-bold">Price 30$</p>
+
+        <div class="flex items-center justify-center gap-4 mt-4">
+          <button
+            onclick="decreaseQuantity(4)"
+            class="bg-red-500 text-white px-4 py-2 rounded"
+          >
+            −
+          </button>
+
+          <span id="quantity-4" class="text-xl font-bold">0</span>
+
+          <button
+            onclick="increaseQuantity(4)"
+            class="bg-green-500 text-white px-4 py-2 rounded"
+          >
+            +
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
