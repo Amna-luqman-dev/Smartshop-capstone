@@ -8,71 +8,90 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <section class="min-h-screen flex justify-center items-center bg-red-100">
+    <section class="min-h-screen flex justify-center items-center  bg-gray-100 px-4 py-10">
 
-  <form class="bg-white p-8 rounded-2xl shadow-lg w-full max-w-md">
-
-    <h2 class="text-3xl font-bold text-center mb-6 text-blue-700">
-      Create Account
-    </h2>
-
-    <!-- Name -->
-    <label for="name" class="block mb-2 font-medium">
-      Name
-    </label>
-
-    <input
-      type="text"
-      id="name"
-      placeholder="Enter your name"
-      class="w-full p-3 border rounded-lg mb-4 outline-none focus:ring-2 focus:ring-blue-500"
+    <form
+        class="bg-white p-6 sm:p-8 rounded-2xl shadow-lg w-full max-w-md"
     >
 
-    <!-- Father Name -->
-    <label for="father-name" class="block mb-2 font-medium">
-      Father Name
-    </label>
+        <!-- Heading -->
+        <h2
+            class="text-2xl sm:text-3xl font-bold text-center mb-6 text-blue-700"
+        >
+            Create Account
+        </h2>
 
-    <input
-      type="text"
-      id="father-name"
-      placeholder="Enter father name"
-      class="w-full p-3 border rounded-lg mb-4 outline-none focus:ring-2 focus:ring-blue-500"
-    >
 
-    <!-- Email -->
-    <label for="email" class="block mb-2 font-medium">
-      Email
-    </label>
+        <!-- Name -->
+        <label for="name" class="block mb-2 font-medium">
+            Name
+        </label>
 
-    <input
-      type="email"
-      id="email"
-      placeholder="Enter your email"
-      class="w-full p-3 border rounded-lg mb-4 outline-none focus:ring-2 focus:ring-blue-500"
-    >
+        <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            class="w-full p-3 border rounded-lg mb-4 outline-none
+                   focus:ring-2 focus:ring-blue-500"
+        >
 
-    <!-- Password -->
-    <label for="password" class="block mb-2 font-medium">
-      Password
-    </label>
 
-    <input
-      type="password"
-      id="password"
-      placeholder="Enter your password"
-      class="w-full p-3 border rounded-lg mb-6 outline-none focus:ring-2 focus:ring-blue-500"
-    >
+        <!-- Father Name -->
+        <label for="father-name" class="block mb-2 font-medium">
+            Father Name
+        </label>
 
-    <!-- Submit -->
-    <button
-      type="submit"
-      class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition duration-300"
-    >
-      Submit
-    </button>
+        <input
+            type="text"
+            id="father-name"
+            name="father-name"
+            placeholder="Enter father name"
+            class="w-full p-3 border rounded-lg mb-4 outline-none
+                   focus:ring-2 focus:ring-blue-500"
+        >
 
-  </form>
+
+        <!-- Email -->
+        <label for="email" class="block mb-2 font-medium">
+            Email
+        </label>
+
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            class="w-full p-3 border rounded-lg mb-4 outline-none
+                   focus:ring-2 focus:ring-blue-500"
+        >
+
+
+        <!-- Password -->
+        <label for="password" class="block mb-2 font-medium">
+            Password
+        </label>
+
+        <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your password"
+            class="w-full p-3 border rounded-lg mb-6 outline-none
+                   focus:ring-2 focus:ring-blue-500"
+        >
+
+
+        <!-- Submit -->
+        <button
+            type="submit"
+            class="w-full bg-blue-600 hover:bg-blue-700 text-white
+                   py-3 rounded-lg font-semibold transition duration-300"
+        >
+            Submit
+        </button>
+
+    </form>
 
 </section>
     

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+     <!-- Navbar -->
+<section>
+    <nav class="bg-gray-400 min-h-20 px-4 sm:px-6 lg:px-10 py-4">
+        
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row 
+                    items-center justify-between gap-5">
+
+            <!-- Logo -->
+            <div class="shrink-0">
+                <h2 class="text-black font-bold text-2xl sm:text-3xl">
+                    EliteMart
+                </h2>
+            </div>
+
+            <!-- Search -->
+            <div class="relative w-full sm:w-[400px] lg:w-[450px]">
+                <input
+                    type="text"
+                    placeholder="Search here..."
+                    class="w-full p-3 pr-12 rounded-2xl border border-gray-300 
+                           outline-none focus:ring-2 focus:ring-blue-500"
+                />
+
+                <button
+                    class="absolute right-3 top-1/2 -translate-y-1/2 
+                           text-gray-500 hover:text-blue-600"
+                >
+                    ⌕
+                </button>
+            </div>
+
+            <!-- Navbar Links -->
+            <ul class="flex flex-wrap justify-center items-center 
+                       gap-4 sm:gap-6 lg:gap-8 font-bold">
+
+                <li>
+                    <a href="#home"
+                       class="hover:text-blue-600 transition duration-300">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#about"
+                       class="hover:text-blue-600 transition duration-300">
+                        About
+                    </a>
+                </li>
+
+                <!-- Services -->
+                <li class="relative group">
+                    <a
+                        href="#cart"
+                        class="hover:text-blue-600 transition duration-300 
+                               flex items-center gap-1"
+                    >
+                        Services
+                        <span class="text-sm">▼</span>
+                    </a>
+
+                    <!-- Dropdown -->
+                    <ul
+                        class="absolute left-1/2 -translate-x-1/2 top-full mt-2 
+                               w-56 bg-white shadow-lg rounded-lg
+                               opacity-0 invisible
+                               group-hover:opacity-100 group-hover:visible
+                               transition-all duration-300 z-50"
+                    >
+                        <li>
+                            <a href="#cart"
+                               class="block px-4 py-3 hover:bg-blue-50 
+                                      hover:text-blue-600 transition">
+                                🚚 Home Delivery
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#cart"
+                               class="block px-4 py-3 hover:bg-blue-50 
+                                      hover:text-blue-600 transition">
+                                🛍️ Online Shopping
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#cart"
+                               class="block px-4 py-3 hover:bg-blue-50 
+                                      hover:text-blue-600 transition">
+                                🥬 Fresh Products
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#cart"
+                               class="block px-4 py-3 hover:bg-blue-50 
+                                      hover:text-blue-600 transition">
+                                ⚡ Fast Delivery
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#cart"
+                               class="block px-4 py-3 hover:bg-blue-50 
+                                      hover:text-blue-600 transition">
+                                💳 Secure Payment
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#cart"
+                               class="block px-4 py-3 hover:bg-blue-50 
+                                      hover:text-blue-600 transition">
+                                🎁 Deals & Offers
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Contact -->
+                <li>
+                    <a href="#contact"
+                       class="hover:text-blue-600 transition duration-300">
+                        Contact
+                    </a>
+                </li>
+
+                <!-- Why Me -->
+                <li>
+                    <a href="#aboutMart"
+                       class="hover:text-blue-600 transition duration-300">
+                        Why Me?
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+</section>
+
+
+<!-- Home Content -->
+<section class="px-4 sm:px-8 lg:px-16 py-10">
+    <div class="max-w-5xl mx-auto text-center">
+
+        <h2 class="font-bold p-3 text-xl sm:text-2xl">
+            Discover Quality Products at the Best Prices
+        </h2>
+
+        <p class="leading-8 text-gray-700 text-sm sm:text-base">
+            EliteMart is your one-stop destination for quality products, great
+            value, and a smooth online shopping experience. We bring you a wide
+            range of carefully selected products that combine style, quality, and
+            affordability. Whether you're looking for everyday essentials, modern
+            gadgets, fashion items, or something special, you'll find plenty of
+            options to explore. Our goal is to make online shopping simple,
+            convenient, and enjoyable for everyone. Browse our collection, discover
+            your favorite products, and shop with confidence at EliteMart.
+        </p>
+
+        <a
+            href="#contact"
+            class="inline-block mt-8 px-6 py-3 hover:text-blue-600 
+                   font-bold bg-gray-300 rounded-xl transition duration-300"
+        >
+            ORDER NOW
+        </a>
+
+    </div>
+</section>
+</body>
+</html>

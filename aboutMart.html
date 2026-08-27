@@ -8,44 +8,62 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <section class="min-h-screen  flex items-center justify-center p-6">
-  <div class="relative w-full max-w-6xl overflow-hidden rounded-3xl">
+   <section class="min-h-screen flex items-center justify-center p-4 sm:p-6">
 
-    <!-- Image -->
-    <img
-      src="./images/shoping-mart.jpeg"
-      alt="shopping"
-      class="w-full h-[600px] object-cover"
-    >
+    <div class="relative w-full max-w-6xl overflow-hidden rounded-3xl">
 
-    <!-- Dark Overlay -->
-    <div class="absolute inset-0 bg-black/45"></div>
+        <!-- Image -->
+        <img
+            src="./images/shoping-mart.jpeg"
+            alt="shopping"
+            class="w-full h-[400px] sm:h-[500px] lg:h-[600px] object-cover"
+        >
 
-    <!-- Text on Image -->
-    <div class="absolute inset-0 flex items-center justify-center text-center px-6">
-      <div class="max-w-3xl text-white">
+        <!-- Dark Overlay -->
+        <div class="absolute inset-0 bg-black/45"></div>
 
-        <h2 class="text-4xl md:text-6xl font-bold mb-6">
-          Why Choose Us?
-        </h2>
+        <!-- Text on Image -->
+        <div
+            class="absolute inset-0 flex items-center justify-center 
+                   text-center px-5 sm:px-8"
+        >
 
-        <p class="text-base md:text-xl leading-relaxed">
-          At our Mart, we are committed to making your everyday shopping
-          simple, convenient, affordable, and enjoyable. We offer a wide
-          range of fresh and high-quality groceries, household essentials,
-          beverages, and daily-use products, all available in one place.
-          Our goal is to provide you with the best products at reasonable
-          prices while maintaining excellent quality and customer
-          satisfaction. With fast and reliable home delivery, secure payment
-          options, easy online shopping, and exciting deals and discounts,
-          you can shop for everything you need from the comfort of your home.
-        </p>
-        <button class="p-3 mt-5 bg-white text-gray-500 rounded-2xl"> <a href="cart.html" >ORDER NOW</a></button>
+            <div class="max-w-3xl text-white">
 
-      </div>
+                <h2 class="text-3xl sm:text-4xl md:text-6xl font-bold mb-5">
+                    Why Choose Us?
+                </h2>
+
+                <p class="text-sm sm:text-base md:text-xl leading-relaxed">
+                    At our Mart, we are committed to making your everyday
+                    shopping simple, convenient, affordable, and enjoyable.
+                    We offer a wide range of fresh and high-quality groceries,
+                    household essentials, beverages, and daily-use products,
+                    all available in one place. Our goal is to provide you
+                    with the best products at reasonable prices while
+                    maintaining excellent quality and customer satisfaction.
+                    With fast and reliable home delivery, secure payment
+                    options, easy online shopping, and exciting deals and
+                    discounts, you can shop for everything you need from the
+                    comfort of your home.
+                </p>
+
+                <!-- Order Button -->
+                <a
+                    href="#cart"
+                    class="inline-block px-6 py-3 mt-5 bg-white 
+                           text-gray-600 rounded-2xl
+                           hover:bg-gray-200 transition duration-300"
+                >
+                    ORDER NOW
+                </a>
+
+            </div>
+
+        </div>
+
     </div>
 
-  </div>
 </section>
   </body>
 </html>
